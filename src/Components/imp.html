@@ -1,0 +1,24 @@
+<div className="flex text-sm gap-x-2">
+                <div className="flex items-center gap-x-1">
+              <input type="range" min={6} max={100} value={length} onChange={(e)=>{setlength(e.target.value)}} className="cursor-pointer"></input>
+              <label>Length {length}</label>
+              </div>
+              
+                <input type="checkbox" 
+                defaultChecked={numberAllowed} id="inputInput" 
+                onChange={()=>{
+                  setnumberAllowed((prev)=>!prev)}}></input>
+                <label htmlFor="numberInput">Number</label>
+              
+              <div className="flex items-center gap x-1 ">
+               <input type="checkbox"
+               defaultChecked={charAllowed} id="charInput"
+               onChange={()=>{
+                setCharAllowed((prev)=>!prev)
+               }}
+               
+               ></input>
+              <label htmlFor="characterInput">Character</label>
+              </div>
+              </div>
+        </div>
